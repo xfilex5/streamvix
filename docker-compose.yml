@@ -5,11 +5,11 @@ services:
     ports:
       - "7860:7860"
     environment:
-      - ADDON_BASE_URL=http://192.168.1.28
+      - ADDON_BASE_URL=http://192.168.1.41
       - BOTHLINK=true
       - MFP_URL=https://mfp.tuodominio.com  # MediaFlow Proxy URL
       - MFP_PASSWORD=tuapassword            # MediaFlow Proxy password
-      - TMDB_API_KEY=tua_chiave_tmdb        # https://www.themoviedb.org/settings/api
+      - TMDB_API_KEY=710711c7c7eee4b7f3293c331e5587bf        # https://www.themoviedb.org/settings/api
       
       # Anime (opzionale)
       - ANIMEUNITY_ENABLED=true
@@ -34,3 +34,4 @@ services:
   #   volumes:
   #     - /var/run/docker.sock:/var/run/docker.sock
   #   restart: always
+
