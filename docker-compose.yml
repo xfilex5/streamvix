@@ -5,7 +5,7 @@ services:
     ports:
       - "7860:7860"
     environment:
-    - ADDON_BASE_URL=https://streamvix.miodominio.xyz
+    - ADDON_BASE_URL=http://192.168.1.28
     - MFP_URL=https://mfp.miodominio.xyz
     - MFP_PSW=supersecret
     - VIX_DUAL=1        # opzionale
@@ -34,4 +34,5 @@ services:
   #   volumes:
   #     - /var/run/docker.sock:/var/run/docker.sock
   #   restart: always
+
 
