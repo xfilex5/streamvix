@@ -1,12 +1,10 @@
-version: "3.9"
-
 services:
   streamvix:
-    container_name: StreamVix
-    build: .
+    image: qwertyuiop8899/streamvix:latest
+    container_name: streamvix
     ports:
       - "7860:7860"
-environment:
+    environment:
       - ADDON_BASE_URL=http://192.168.1.28
       - BOTHLINK=true
       - MFP_URL=https://mfp.tuodominio.com  # MediaFlow Proxy URL
