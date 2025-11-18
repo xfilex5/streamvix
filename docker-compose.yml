@@ -1,36 +1,8 @@
+version: "3.9"
+
 services:
   streamvix:
-    image: qwertyuiop8899/streamvix:latest
-    container_name: streamvix
+    container_name: StreamVix
+    build: .
     ports:
       - "7860:7860"
-    environment:
-      - ADDON_BASE_URL=http://192.168.1.28
-      - BOTHLINK=true
-      - MFP_URL=https://mfp.tuodominio.com  # MediaFlow Proxy URL
-      - MFP_PASSWORD=tuapassword            # MediaFlow Proxy password
-      - TMDB_API_KEY=tua_chiave_tmdb        # https://www.themoviedb.org/settings/api
-      
-      # Anime (opzionale)
-      - ANIMEUNITY_ENABLED=true
-      - ANIMESATURN_ENABLED=true
-      
-      # Live TV & Eventi Sportivi
-      - Enable_Live_TV=true
-      
-      # Eventi Sportivi Avanzati (opzionale - configurazione automatica se omesso)
-      # - SPON_PROG_URL=https://sportzonline.st/prog.txt
-      # - RBTV_DISCOVERY_BEFORE_MIN=15
-      # - STREAMED_ENABLE=1
-      
-      # Installazione Locale/VPS (opzionale - per FHD VixSrc synthetic)
-      # - ADDON_BASE_URL=https://streamvix.tuodominio.com
-    restart: always
-    
-  # Watchtower per aggiornamenti automatici immagine (opzionale)
-  # watchtower:
-  #   image: containrrr/watchtower
-  #   container_name: watchtower
-  #   volumes:
-  #     - /var/run/docker.sock:/var/run/docker.sock
-  #   restart: always
