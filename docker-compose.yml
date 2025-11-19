@@ -5,10 +5,10 @@ services:
     ports:
       - "7860:7860"
     environment:
-      - ADDON_BASE_URL=http://stremio-io.duckdns.org:7860
+      - ADDON_BASE_URL=https://streamv-stremio-giy.duckdns.org
       - BOTHLINK=true
-      - MFP_URL=https://mfp.tuodominio.com  # MediaFlow Proxy URL
-      - MFP_PASSWORD=tuapassword            # MediaFlow Proxy password
+      - MFP_URL=https:https://mediaflo.duckdns.org  # MediaFlow Proxy URL
+      - MFP_PASSWORD=2323gio            # MediaFlow Proxy password
       - TMDB_API_KEY=710711c7c7eee4b7f3293c331e5587bf        # https://www.themoviedb.org/settings/api
       
       # Anime (opzionale)
@@ -34,6 +34,7 @@ services:
   #   volumes:
   #     - /var/run/docker.sock:/var/run/docker.sock
   #   restart: always
+
 
 
 
