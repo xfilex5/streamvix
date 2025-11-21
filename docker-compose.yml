@@ -5,7 +5,7 @@ services:
     ports:
       - "7860:7860"
     environment:
-      - ADDON_BASE_URL=https://streamv-stremio-giy.duckdns.org
+      - ADDON_BASE_URL=http://192.168.1.41:8888
       - BOTHLINK=true
       - MFP_URL=https:https://mediaflo.duckdns.org  # MediaFlow Proxy URL
       - MFP_PASSWORD=2323gio            # MediaFlow Proxy password
@@ -34,6 +34,7 @@ services:
   #   volumes:
   #     - /var/run/docker.sock:/var/run/docker.sock
   #   restart: always
+
 
 
 
